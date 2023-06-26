@@ -28,9 +28,9 @@ const Login = () => {
     }
     if (isValidEmail(email) && isValidPassword(password)) {
       await signInWithEmailAndPassword(auth, email, password);
-      setEmail('')
-      setPassword('')
-      navigate("/home");
+      setEmail("");
+      setPassword("");
+      navigate("/");
     } else {
       setErr(true);
       setTimeout(() => {

@@ -25,7 +25,7 @@ const AddExpense = () => {
           sum: sum,
           author: user.email,
           userId: user.uid,
-          time: new Date()
+          time: new Date(),
         });
       } catch (err) {
         console.error(err);

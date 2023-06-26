@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth, db } from "../firebase";
 import { useGlobalContext } from "../context";
-import {  doc, setDoc } from "firebase/firestore";
+import { doc, setDoc } from "firebase/firestore";
 
 const Register = () => {
   const navigate = useNavigate();
@@ -35,7 +35,7 @@ const Register = () => {
       setEmail("");
       setPassword1("");
       setPassword2("");
-      navigate("/home");
+      navigate("/");
     } else {
       setErr(true);
       setTimeout(() => {
