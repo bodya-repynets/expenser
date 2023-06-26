@@ -1,4 +1,4 @@
-import { Stack } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 import { Outlet } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import { useEffect } from "react";
@@ -23,6 +23,7 @@ function App() {
   }, [user]);
   return (
     <Stack>
+      <Typography>gjlarqegnq;bnhr</Typography>
       <Navbar />
       <Outlet />
     </Stack>
