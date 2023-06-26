@@ -23,7 +23,6 @@ function App() {
   }, [user]);
   return (
     <Stack>
-      <Typography>gjlarqegnq;bnhr</Typography>
       <Navbar />
       <Outlet />
     </Stack>
