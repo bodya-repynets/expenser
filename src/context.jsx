@@ -39,12 +39,12 @@ const AppContext = () => {
       <BrowserRouter>
         {!loading && (
           <Routes>
-            <Route path="./" element={<App />}>
+            <Route path="/" element={<App />}>
               <Route element={<Protected />}>
-                <Route path="./home" element={<Home />} />
+                <Route index element={<Home />} />
               </Route>
-              <Route path="./login" element={<Login />} />
-              <Route path="./register" element={<Register />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/register" element={<Register />} />
             </Route>
           </Routes>
         )}
